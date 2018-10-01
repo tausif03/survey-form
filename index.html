@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Form</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1 id="title">Survey Form</h1>
+		<div id="container">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+			<form id="survey-form">
+				<div class="form-input">
+					<div class="leftTab"><label id="name-label" for="name">Name:</label></div>
+					<div class="rightTab"><input type="text" id="name" placeholder="Enter your name" name="name" required></div>
+				</div>
+				<div class="form-input">
+					<div class="leftTab"><label id="email-label" for="email">Email:</label></div>
+					<div class="rightTab"><input type="Email" id="email" placeholder="Enter your Email"  name="email" required></div>
+				</div>
+				
+				<div class="form-input">
+					<div class="leftTab"><label id="number-label" for="number">Age:</label></div>
+					<div class="rightTab"><input type="number" id="number" placeholder="Age" name="age" required min="1" max="100"></div>
+				</div>
+				
+				<div class="form-input">
+					<div class="leftTab"><label id="dropdown-label" for="dropdown">Which option best describes your current role?</label></div>
+					<div class="rightTab"><select id="dropdown" name="dropdown">
+						<option disabled selected>Select an option</option>
+						<option>Student</option>
+						<option>Full Time Job</option>
+						<option>Full Time Learner</option>
+						<option>Prefer not to say</option>
+						<option>Other</option>
+					</select></div>
+				</div>
+				
+				<fieldset class="form-input">
+					<div class="leftTab"><legend id="radio-legend">How likely is that you would recommend freeCodeCamp to a friend?</legend></div>
+					<div class="rightTab">
+						<label for="radio1" class="btn-choice"><input type="radio" id="radio1" name="radio" value="choice1"> Definitely</label>
+						<label for="radio2" class="btn-choice"><input type="radio" id="radio2" name="radio" value="choice2"> Maybe</label>
+						<label for="radio3" class="btn-choice"><input type="radio" id="radio3" name="radio" value="choice3"> Not sure</label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-input">
+					<div class="leftTab"><legend id="checkbox-legend">Things that should be improved in the future <br> (Check all that apply):</legend></div>
+					<div class="rightTab">
+						<label for="check1" class="btn-choice"><input type="checkbox" id="check1" name="check" value="choice1"> Front-end Projects</label>
+						<label for="check2" class="btn-choice"><input type="checkbox" id="check2" name="check" value="choice2"> Back-end Projects</label>
+						<label for="check3" class="btn-choice"><input type="checkbox" id="check3" name="check" value="choice3"> Data Visualization</label>
+						<label for="check4" class="btn-choice"><input type="checkbox" id="check4" name="check" value="choice4"> Challenges</label>
+						<label for="check5" class="btn-choice"><input type="checkbox" id="check5" name="check" value="choice5"> Open Source Community</label>
+						<label for="check6" class="btn-choice"><input type="checkbox" id="check6" name="check" value="choice6"> Gitter help rooms</label>
+						<label for="check7" class="btn-choice"><input type="checkbox" id="check7" name="check" value="choice7"> Videos</label>
+						<label for="check8" class="btn-choice"><input type="checkbox" id="check8" name="check" value="choice8"> City Meetups</label>
+						<label for="check9" class="btn-choice"><input type="checkbox" id="check9" name="check" value="choice9" >Wiki</label>
+						<label for="check10" class="btn-choice"><input type="checkbox" id="check10" name="check" value="choice10"> Forum</label>
+						<label for="check11" class="btn-choice"><input type="checkbox" id="check11" name="check" value="choice11"> Additional Courses</label>
+					</div>
+				</fieldset>
+				
+				<div class="form-input">
+					<div class="leftTab"><label for="comment" id="comment-label">Any Comments or Suggestions?</label></div>
+					<div class="rightTab"><textarea id="comment" name="comment" placeholder="Enter your comment here..." rows="4"></textarea></div>
+				</div>
+				
+				<div class="form-input btn-submit">
+					<button id="submit" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
